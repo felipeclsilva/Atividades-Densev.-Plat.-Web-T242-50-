@@ -1,3 +1,4 @@
+/* Aqui só deixei a maior parte dos estilos do vite (minhas classes deixei lá embaixo)*/
 :root {
   --text: #6b6375;
   --text-h: #08060d;
@@ -11,8 +12,8 @@
   --shadow:
     rgba(0, 0, 0, 0.1) 0 10px 15px -3px, rgba(0, 0, 0, 0.05) 0 4px 6px -2px;
 
-  --sans: system-ui, 'Segoe UI', Roboto, sans-serif;
-  --heading: system-ui, 'Segoe UI', Roboto, sans-serif;
+  --sans: system-ui, "Segoe UI", Roboto, sans-serif;
+  --heading: system-ui, "Segoe UI", Roboto, sans-serif;
   --mono: ui-monospace, Consolas, monospace;
 
   font: 18px/145% var(--sans);
@@ -32,9 +33,9 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --text: #9ca3af;
-    --text-h: #f3f4f6;
-    --bg: #16171d;
+    --text: #1e2024;
+    --text-h: #191b1f;
+    --bg: lightgray;
     --border: #2e303a;
     --code-bg: #1f2028;
     --accent: #c084fc;
@@ -44,10 +45,6 @@
     --shadow:
       rgba(0, 0, 0, 0.4) 0 10px 15px -3px, rgba(0, 0, 0, 0.25) 0 4px 6px -2px;
   }
-
-  #social .button-icon {
-    filter: invert(1) brightness(2);
-  }
 }
 
 body {
@@ -55,15 +52,12 @@ body {
 }
 
 #root {
-  width: 1126px;
-  max-width: 100%;
   margin: 0 auto;
   text-align: center;
-  border-inline: 1px solid var(--border);
-  min-height: 100svh;
   display: flex;
   flex-direction: column;
-  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
 }
 
 h1,
@@ -91,21 +85,43 @@ h2 {
     font-size: 20px;
   }
 }
-p {
-  margin: 0;
+
+.container {
+  background-color: #fff;
+  color: #333;
+  max-width: 500px;
+  width: 100%;
+  margin: 0 16px;
+  border-radius: 7px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.514);
+  padding: 24px;
+  box-sizing: border-box;
 }
 
-code,
-.counter {
-  font-family: var(--mono);
-  display: inline-flex;
-  border-radius: 4px;
-  color: var(--text-h);
+.input {
+  background-color: white;
+  margin-right: 10px;
+  border-radius: 3px;
+  color: black;
 }
 
-code {
-  font-size: 15px;
-  line-height: 135%;
-  padding: 4px 8px;
-  background: var(--code-bg);
+.itemLista {
+  color: rgb(0, 0, 0);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: left;
+  padding: 8px;
+  border: 1px solid #0000002f;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.deletarBotao {
+  padding: 5px;
+  border-radius: 3px;
+  border: none;
+  background-color: #ff0000;
+  color: white;
+  margin-left: 10px;
 }
