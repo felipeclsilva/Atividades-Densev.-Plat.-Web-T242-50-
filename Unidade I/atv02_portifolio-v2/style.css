@@ -1,0 +1,98 @@
+@charset "UTF-8";
+
+#titulo {
+    color: #ff0000;
+}
+
+#img {
+    border: solid 1px white;
+    margin-bottom: 20px;
+}
+
+.elementosDeLista {
+    display: inline-block;
+    background-color: #002d35a8;
+    padding: 3px;
+    border-radius: 5px;
+    margin: 0px 10px 5px 10px;
+    
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+}
+
+header li:hover {
+    background-color: #460606c9;
+    transition-duration: 0.5s;
+}
+
+main a:visited {
+    color: rgb(149, 13, 119);
+}
+
+img + nav {
+    background-color: #000B0D;
+}
+
+hr + h3 {
+    font-style: italic;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+    background-image: linear-gradient(to bottom, #000B0D, #154B52);
+    
+}
+
+#main {
+    width: 600px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: #ffffffb4;
+    
+}
+
+[id="main"] {
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px 1px #afafaf87;;
+}
+
+main h2 {
+    margin: 10px 0px;
+}
+
+main h3 {
+    margin: 10px 20px ;
+}
+
+article p ~ ul li > a {
+    text-decoration: none;
+}
+
+h3 ~ p.indentacao {
+    line-height: 24px;
+    text-indent: 30px;
+}
+
+h3::before {
+    content: '👉 ';
+}
+
+h3::after {
+     content: ' -';
+}
+
+[type="square"] {
+    font-size: 1.07em;
+}
+
+footer {
+    text-align: center;
+    background-color: #000B0D;
+    color: rgba(255, 255, 255, 0.616);
+}

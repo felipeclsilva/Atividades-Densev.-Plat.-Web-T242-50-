@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="image/favicon.ico" type="image/x-icon">
+    <title>Portifólio - Felipe Clemente</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-image: linear-gradient(to bottom, #390D02, #000B0D);
+        }
+
+        article > ul {
+            list-style-position: inside;
+        }
+
+        /* Conflitos de estilos */
+        /* Conflito 1: usando !important para o primeiro vencer a segunda seleção de h2 */
+        h2 {
+            color: black !important; 
+        }
+
+        h2 {
+            color: rgb(255, 0, 0);
+        }
+
+        /* Conflito 2 */
+        .paragEmConflito { /* Especificidade 10*/
+            color: red;
+        }
+
+        #pEmConflito { /* Especificidade 100*/
+            color: blue;
+        }
+
+        /* Conflito 3: CSS inline no h1  com CSS externo na linha 3*/
+    </style>
+</head>
+<body>
+    <header>
+        <h1 id="titulo" style="color: #fff; padding: 20px; text-align: center;">Meu perfil - Felipe Clemente</h1>
+        <img id="img" src="image/imagem.jpg" alt="foto de perfil">
+        <nav>
+            <ul>
+                <li class="elementosDeLista"><a href="#">Início</a></li>
+                <li  class="elementosDeLista"><a href="#">Apresentação</a></li>
+                <li  class="elementosDeLista"><a href="#">Projetos</a></li>
+                <li  class="elementosDeLista"><a href="#">Links</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="main">
+        <section>
+            <h2 style='font-family: Georgia'>Apresentação</h2>
+            <article>
+                <hr>
+                <h3>Um pouco sobre mim</h3>
+                <p class="indentacao">Meu nome é <strong>Felipe Clemente da Silva</strong>, estou cursando <em>Engenharia da Computação</em> na <a href="https://unifor.br/">UNIFOR</a>. Ao procurar a computação, iniciei estudando Ciência de Dados, utilziando Python para Machine Learning e análise de dados. Agora estou explorando outras tecnologias, aperfeiçoando meus conhecimentos com Desenvolvimento Web.</p>
+            </article>
+            <article>
+                <h3>Atualmente</h3>
+                <p class="indentacao">Hoje estou estudando HTML5, CSS3 e JavaScript, princpipalmente com o <a href="https://www.cursoemvideo.com/">Curso em Vídeo</a> do Gustavo Guanabara, resolvendo muitos problemas propostos pelo curso.</p>
+                <p>vaaai</p>
+            </article>
+        </section>
+        <section>
+            <h2 style='font-family: Georgia'>Projetos</h2>
+            <article>
+                <hr>
+                <h3>Minha atividade</h3>
+                <p class="indentacao">Possuo alguns simples projetos, exercícios e desafios disponíveis publicamente no meu <a href="https://github.com/felipeclsilva" target="_blank" rel="external">GitHub</a>, como o <strong>Blog site da Android</strong> no repositório <em>"html-css"</em>, <strong>Analisador de Números</strong> e <strong>Preço Mudou</strong> no repositório <em>"javascript"</em>.</p>
+            </article>
+        </section>
+        <section>
+            <h2 style='font-family: Georgia'>Links</h2>
+            <article>
+                <hr>
+                <h3>Redes Sociais</h3>
+                <p id="pEmConflito" class="paragEmConflito" style="margin-bottom: 10px;">Acesse minhas redes sociais:</p>
+                <ul>
+                    <li type="square"><a href="https://github.com/felipeclsilva" target="_blank" rel="external">GitHub</a></li>
+                    <li type="square"><a href="https://www.linkedin.com/in/felipe-clemente-3523762a9/" target="_blank" rel="external">LinkedIn</a></li>
+                </ul>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <hr>
+        Desenvolvido por Felipe Clemente
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

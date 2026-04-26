@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="image/favicon.ico" type="image/x-icon">
+    <title>Portifólio - Felipe Clemente</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #000b0d53;
+        }
+
+        article > ul {
+            list-style-position: inside;
+        }
+
+        h2 {
+            color: black !important; 
+        }
+
+        h2 {
+            color: rgb(255, 0, 0);
+        }
+
+        .paragEmConflito {
+            color: red;
+        }
+
+        #pEmConflito {
+            color: blue;
+        }
+
+    </style>
+</head>
+<body class="layout">
+    <header id="inicio" class="header">
+        <h1 id="titulo" style="padding-top: 20px; text-align: center;">Meu perfil - Felipe Clemente</h1>
+
+        <ul>
+            <li>Sonhar</li>
+            <li>Projetar</li>
+            <li>Produzir</li>
+            <li>Avaliar</li>
+        </ul>
+    </header>
+
+    <div class="menu">
+        <div id="imagem">
+            <img id="img" src="image/imagem.jpg" alt="foto de perfil" width="120px">
+        </div>
+
+        <nav>
+            <ul>
+                <li class="elementosDeLista"><a href="#inicio">Início</a></li>
+                <li  class="elementosDeLista"><a href="#apresentacao">Apresentação</a></li>
+                <li  class="elementosDeLista"><a href="#projetos">Projetos</a></li>
+                <li  class="elementosDeLista"><a href="#links">Links</a></li>
+            </ul>
+        </nav>
+
+        <p>Contato:</p>
+        <ul>
+            <li>(85) 98994-9629</li>
+            <li>felipe@gmail.com</li>
+            <li><a href="https://www.instagram.com/felipecl_sillva/" target="_blank" rel="external">@felipeclsillva</a></li>
+        </ul>
+    </div>
+
+    <main id="main" class="conteudo">
+        <section id="apresentacao">
+            <h2 style='font-family: Georgia'>Apresentação</h2>
+            <article>
+                <hr>
+                <h3>Um pouco sobre mim</h3>
+                <p class="indentacao">Meu nome é <strong>Felipe Clemente da Silva</strong>, estou cursando <em>Engenharia da Computação</em> na <a href="https://unifor.br/">UNIFOR</a>. Ao procurar a computação, iniciei estudando Ciência de Dados, utilziando Python para Machine Learning e análise de dados. Agora estou explorando outras tecnologias, aperfeiçoando meus conhecimentos com Desenvolvimento Web.</p>
+            </article>
+            <article>
+                <h3 id="positionRelative">Atualmente</h3>
+                <p class="indentacao">Hoje estou estudando HTML5, CSS3 e JavaScript, princpipalmente com o <a href="https://www.cursoemvideo.com/">Curso em Vídeo</a> do Gustavo Guanabara, resolvendo muitos problemas propostos pelo curso.</p>
+            </article>
+        </section>
+        <section id="projetos">
+            <h2 style='font-family: Georgia'>Projetos</h2>
+            <article>
+                <hr>
+                <h3>Minha atividade</h3>
+                <p class="indentacao">Possuo alguns simples projetos, exercícios e desafios disponíveis publicamente no meu <a href="https://github.com/felipeclsilva" target="_blank" rel="external">GitHub</a>, como:</p>
+
+                <div class="flex-between">
+                    <div class="box">Blog site da Android</div>
+                    <div class="box">Analisador de Números</div>
+                    <div class="box">Preço Mudou</div>
+                </div>
+            </article>
+        </section>
+        <section id="links">
+            <h2 style='font-family: Georgia'>Links</h2>
+            <article>
+                <div class="flex-center">
+                    <div class="box">👉 Redes Sociais</div>
+                </div>
+
+                <div id="containerRelative">
+                    <p>Acesse minhas redes sociais:</p>
+                </div>
+
+                <div class="flex-column">
+                    
+                    <div class="boxLinks"><a href="https://github.com/felipeclsilva" target="_blank" rel="external">GitHub</a></div>
+                    <div class="boxLinks"><a href="https://www.linkedin.com/in/felipe-clemente-3523762a9/" target="_blank" rel="external">LinkedIn</a></div>
+                </div>
+            </article>
+        </section>
+        <div id="positionFixo">
+            <img src="image/favicon.ico" alt="iconeArquivo">
+        </div>
+    </main>
+    <footer class="footer">
+        <p>Desenvolvido por Felipe Clemente</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

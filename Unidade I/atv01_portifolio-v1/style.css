@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+/* Como descrito no site, css é um dos primeiros passos do Desenvolvimento Web, então já possuo um certo conhecimento. 
+
+Por isso de forma bem simples, mesmo para a primeira aula/exemplo, irei usar apenas o básico de costume.*/
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+}
+
+footer {
+    text-align: center;
+}
