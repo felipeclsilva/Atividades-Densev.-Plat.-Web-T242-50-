@@ -76,20 +76,20 @@ document.querySelector("#app").innerHTML = /*html*/ `
 
 const projetos = [
   {
-    titulo: "To-Do List React",
+    titulo: "To-Do List React <i class='bi bi-list-task'></i>",
     descricao: "Lista de tarefas dinâmica construída com React.",
     imagem: imgTodoList,
     link: "https://github.com/felipeclsilva/Atividades-Densev.-Plat.-Web-T242-50-/tree/main/Unidade%20II/atv07_react-ToDoList",
   },
   {
-    titulo: "App de Previsão do Tempo",
+    titulo: "App Previsão do Tempo <i class='bi bi-thermometer-snow'></i>",
     descricao:
       "Aplicação que consome uma API pública para mostrar a previsão climática.",
     imagem: imgApiHgBrasil,
     link: "https://github.com/felipeclsilva/Atividades-Densev.-Plat.-Web-T242-50-/tree/main/Unidade%20I/atv05_appAPIExterna-DadosCimaticos",
   },
   {
-    titulo: "Site Android",
+    titulo: "Site Android <i class='bi bi-android2'></i>",
     descricao:
       "Página única e completa, um blog sobre desenvolvimento Android.",
     imagem:

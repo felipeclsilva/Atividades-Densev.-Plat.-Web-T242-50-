@@ -68,6 +68,15 @@ p {
 
 main {
   flex-grow: 1;
+  margin-top: 100px;
+}
+
+.projects {
+  margin: 100px 0px 100px 0px;
+}
+
+.card-text {
+  margin: 10px 0px;
 }
 
 footer p {
