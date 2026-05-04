@@ -1,11 +1,28 @@
 function addTask() {
-  const taskInput = document.getElementById("taskInput");
-  const taskList = document.getElementById("taskList");
+  const gameInput = document.getElementById("gameInput");
+  const gameCategoria = document.getElementById("gameCategoria");
+  const taskList = document.getElementById("gameList");
 
-  if (taskInput.value.trim() !== "") {
+  if (gameInput.value.trim() !== "" && gameCategoria.value.trim() !== "") {
     const li = document.createElement("li");
-    li.textContent = taskInput.value;
+    li.textContent = gameInput.value + " - " + gameCategoria.value;
+
+    const mark = document.createElement("input");
+    mark.type = "checkbox";
+    mark.className = "mark";
+    li.appendChild(mark);
+
+    const deleteButton = document.createElement("button");
+    deleteButton.type = "button";
+    deleteButton.textContent = "X";
+    deleteButton.className = "deleteBtn";
+    deleteButton.addEventListener("click", () => {
+      li.remove();
+    });
+    li.appendChild(deleteButton);
+
     taskList.appendChild(li);
-    taskInput.value = "";
+    gameInput.value = "";
+    gameCategoria.value = "";
   }
 }

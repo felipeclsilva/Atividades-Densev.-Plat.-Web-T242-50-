@@ -4,21 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="https://cdni.iconscout.com/illustration/free/thumb/free-concept-of-to-do-list-illustration-svg-download-png-1785604.png" type="image/x-icon">
-    <title>Lista de Tarefas</title>
+    <title>Lista de Tarefas Peronalizada</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="main">
-        <h1>Lista de Tarefas</h1>
+    <main id="main">
+        <h1>To-do List Games 🎮</h1>
+        <p>Bem-vindo! Insira os jogos que deseja jogar e planeje melhor sua jogatina.</p>
         
-        <input type="text" id="taskInput" placeholder="Digite uma nova tarefa">
+        <div id="taskGamesContainer">
+            <input type="text" id="gameInput" placeholder="Digite um novo game">
+            <input type="text" id="gameCategoria" placeholder="Digite a categoria do game">
+            <button onclick="addTask()">
+                Adicionar Game
+            </button>
+        </div>
 
-        <button onclick="addTask()">
-            Adicionar Tarefa
-        </button>
-
-        <ul id="taskList"></ul>
-    </div>
+        <ul id="gameList"></ul>
+    </main>
 
     <script src="script.js"></script>
 </body>
